@@ -38,7 +38,10 @@
   padding-bottom: 20px;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 350px 20px 650px;
   grid-template-columns: 350px 650px;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
   column-gap: 20px;
 }
 
@@ -406,7 +409,10 @@
   }
 
   .content {
+    -ms-grid-columns: 0px 0 1fr;
     grid-template-columns: 0px 1fr;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
     column-gap: 0;
   }
 }
