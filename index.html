@@ -30,7 +30,7 @@
       </div>
       <div class="form-wrapper">
         <div class="main-select__wrapper">
-          <select class="main-select" name="main-select" id="main-select-id" disabled>
+          <select class="main-select" name="main-select" id="main-select-id">
             <option value="s1" class="main-select-item" selected>Пазл</option>
             <option value="s2" class="main-select-item">Item 2</option>
             <option value="s3" class="main-select-item">Item 3</option>
@@ -63,8 +63,14 @@
         <div class="puzzle-description">
           <span>Сколько деталей у пазла</span>
           <div class="puzzle-description__inner">
-            <div class="horizontal">по Горизонтали<span class="amount-puzzle">3</span></div>
-            <div class="vertical">по Вертикали<span class="amount-puzzle">3</span></div>
+            <div class="horizontal">
+              <span class="horizontal-text">по Горизонтали</span>
+              <input class="horizontal-input" type="number" name="horizontal-input" id="horizontal-input-id" value="3">
+            </div>
+            <div class="vertical">
+              <span class="vertical-text">по Вертикали</span>
+              <input class="vertical-input" type="number" name="vertical-input" id="vertical-input-id" value="3">
+            </div>
           </div>
         </div>
         <div class="question-one">
@@ -84,9 +90,22 @@
         <div class="question-three">
           <span>Сколько раз может получить один игрок награду</span>
           <div class="question-three-answer">
-            <span>1</span>
+            <input class="number-awards-input" type="number" name="number-awards-input" id="number-awards-input-id"
+              value="1">
             <span>Раз</span>
           </div>
+        </div>
+        <div class="timeout">
+          <span class="timeout-text">Таймаут</span>
+          <input class="timeout-input" type="number" name="timeout-input" id="timeout-input-id" value="1800">
+          <select class="timeout-select" name="timeout-select" id="timeout-select-id">
+            <option value="t1" class="timeout-select-item">Часов</option>
+            <option value="t2" class="timeout-select-item" selected>Дней</option>
+            <option value="t3" class="timeout-select-item">Недель</option>
+            <option value="t4" class="timeout-select-item">Месяцев</option>
+            <option value="t5" class="timeout-select-item">Кварталов</option>
+            <option value="t6" class="timeout-select-item">Лет</option>
+          </select>
         </div>
       </div>
     </div>
