@@ -478,7 +478,7 @@
 
 @media (max-width: 767px) {
   .container {
-    max-width: 580px;
+    max-width: none;
     padding: 0 5px;
   }
 }
