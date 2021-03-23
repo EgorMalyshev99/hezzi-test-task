@@ -499,11 +499,6 @@
     padding: 0 5px;
   }
 
-  .horizontal,
-  .vertical {
-    padding-top: 10px;
-  }
-
   .horizontal-input,
   .vertical-input {
     width: 140px;
@@ -517,7 +512,6 @@
 
   .horizontal,
   .vertical {
-    padding-top: 0;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 50% 50%;
